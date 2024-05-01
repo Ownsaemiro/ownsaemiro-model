@@ -1,0 +1,7 @@
+Dockerfile
+.gitignore
+.idea
+.dockerignore
+.python-version
+*.md
+model/
