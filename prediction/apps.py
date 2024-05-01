@@ -68,7 +68,7 @@ class Prediction:
         predicted_data = self.concert_regressor.predict(encoded_data)
 
         logging.debug(f'Predicted concert ticket is {predicted_data[0]}')
-        return predicted_data[0]
+        return int(predicted_data[0])
 
     def sports_predict(self, request: dict) -> int:
         organization = request.get('organization', None)
@@ -86,5 +86,5 @@ class Prediction:
             predicted_data = [0]
 
         logging.debug(f'Predicted sports spectator is {predicted_data[0]}')
-        return predicted_data[0]
+        return int(predicted_data[0])
 
