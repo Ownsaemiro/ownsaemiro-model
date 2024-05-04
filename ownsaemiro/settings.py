@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u6q2fivz8l+a$iz46vdqpg8et=!+=qot6&&w0l0nqshu!z2x!q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['prediction-server', 'localhost', '127.0.0.1']
 
 
 # Application definition
